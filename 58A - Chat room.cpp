@@ -6,7 +6,7 @@ int main()
 {
     string s1,s2="hello";
     cin>>s1;
-    int flag1=0,flag2=0;
+    int flag1=0;
     for(int i=0;i<s1.size();i++){
         if(s1[i]==s2[flag1]){
             flag1++;
