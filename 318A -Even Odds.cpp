@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    unsigned long n,k;
+    unsigned long n,k,f;
     cin>>n>>k;
     unsigned long t;
     if(n%2==0){
@@ -13,12 +13,10 @@ int main()
         t=(n/2)+1;
     }
     if(k<=t){
-        cout<<1+(k-1)*2<<endl;
+        cout<<(k*2)-1<<endl;
     }
     else if(k>t&&k<=n){
-        k = k/2;
-        cout<<(1+(k-1)*2)+1<<endl;
+        cout<<(k-t)*2<<endl;
     }
-
     return 0;
 }
